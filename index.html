@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-smooth-scroll>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech Studio</title>
+    <!-- Framework Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fichier CSS personnalisé -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- En-tête -->
+<header class="sticky-top">
+    <div class="container">  
+        <!-- Menu PC (affiché uniquement sur grand écran) -->
+        <nav class="d-none d-lg-block menu-transparent">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#accueil" aria-label="Lien vers la section Accueil">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#presentation" aria-label="Lien vers la section Présentation">Présentation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#services" aria-label="Lien vers la section Nos Services">Nos Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#contact" aria-label="Lien vers la section Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Menu smartphone (affiché uniquement sur petit écran) -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none menu-transparent fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-light" href="#">Accueil</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#presentation">Présentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+   <!-- Section Accueil -->
+<section id="accueil" class="d-flex flex-column align-items-center justify-content-center text-center text-light py-5">
+    <!-- Logo -->
+    <img src="/images/Logo NovaTech Studio sans fond.png" alt="Logo NovaTech Studio" class="logo img-fluid mb-4">
+    <!-- Titre -->
+    <h1 class="display-4 mt-3 titre-accueil">Bienvenue chez NovaTech Studio</h1>
+    <!-- Paragraphe -->
+    <p class="lead mt-2 paragraphe-accueil">Innovation et créativité au service de vos projets numériques.</p>
+</section>
+
+   <!-- Section Présentation -->
+<section id="presentation" class="d-flex align-items-center justify-content-center text-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Colonne Image -->
+            <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+                <img src="/images/pc bureau.webp" alt="Illustration NovaTech" class="img-fluid presentation-img">
+            </div>
+            <!-- Colonne Texte -->
+            <div class="col-12 col-md-6">
+                <h2 class="section-title text-center text-md-start">Présentation</h2>
+                <p class="section-text text-center text-md-start">
+                    Chez <strong>NovaTech Studio</strong>, nous transformons vos idées en solutions numériques innovantes.
+                    Forts d'une expertise en développement web, design interactif, et technologies modernes, nous accompagnons les entreprises dans leur transformation digitale.
+                    En complément, nous proposons des services de <strong>marketing digital</strong>, incluant la gestion et l’optimisation de vos <strong>réseaux sociaux</strong>, pour renforcer votre visibilité et engager efficacement votre audience en ligne.
+                    Notre mission est de créer des expériences numériques sur mesure, alliant créativité, innovation, et excellence technique.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+<!-- Section Nos Services -->
+<section id="services" class="text-light py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Nos Packs</h2>
+
+        <!-- Version simplifiée pour mobile -->
+        <div class="row d-lg-none">
+            <div class="col-12 mb-4 text-center">
+                <img src="/images/bronze-icon.png" alt="Pack Bronze" class="service-icon mb-2 img-fluid">
+                <h3 class="service-title">Pack Bronze</h3>
+                <p class="service-text">Lancez votre présence en ligne avec un site web professionnel.</p>
+            </div>
+            <div class="col-12 mb-4 text-center">
+                <img src="/images/silver-icon.png" alt="Pack Silver" class="service-icon mb-2 img-fluid">
+                <h3 class="service-title">Pack Silver</h3>
+                <p class="service-text">Ajoutez maintenance et support pour une tranquillité maximale.</p>
+            </div>
+            <div class="col-12 mb-4 text-center">
+                <img src="/images/gold-icon.png" alt="Pack Gold" class="service-icon mb-2 img-fluid">
+                <h3 class="service-title">Pack Gold</h3>
+                <p class="service-text">Combinez site web, maintenance et marketing digital.</p>
+            </div>
+        </div>
+
+        <!-- Version détaillée pour desktop -->
+        <div class="row g-4 d-none d-lg-flex">
+            <!-- Pack 1 -->
+            <div class="col-lg-4">
+                <div class="service-card text-center p-4 bg-dark rounded h-100">
+                    <img src="/images/bronze-icon.png" alt="Pack Bronze" class="service-icon mb-3 img-fluid">
+                    <h3 class="service-title">Pack Bronze</h3>
+                    <p class="service-text">Création de site web sur mesure pour lancer votre présence en ligne.</p>
+                    <button class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#packStartModal">En savoir plus</button>
+                </div>
+            </div>
+            <!-- Pack 2 -->
+            <div class="col-lg-4">
+                <div class="service-card text-center p-4 bg-dark rounded h-100">
+                    <img src="/images/silver-icon.png" alt="Pack Silver" class="service-icon mb-3 img-fluid">
+                    <h3 class="service-title">Pack Silver</h3>
+                    <p class="service-text">Création de site web + Maintenance et support pour une tranquillité maximale.</p>
+                    <button class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#packGrowthModal">En savoir plus</button>
+                </div>
+            </div>
+            <!-- Pack 3 -->
+            <div class="col-lg-4">
+                <div class="service-card text-center p-4 bg-dark rounded h-100">
+                    <img src="/images/gold-icon.png" alt="Pack Gold" class="service-icon mb-3 img-fluid">
+                    <h3 class="service-title">Pack Gold</h3>
+                    <p class="service-text">Création de site web + Maintenance + Marketing digital et gestion des réseaux sociaux.</p>
+                    <button class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#packProModal">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modale Pack Start -->
+<div class="modal fade" id="packStartModal" tabindex="-1" aria-labelledby="packStartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="packStartModalLabel">Pack Bronze</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <strong>Pack Bronze</strong> est conçu pour les entreprises ou indépendants souhaitant établir une présence en ligne rapidement et efficacement. Ce pack inclut la <strong>création d’un site web professionnel</strong> sur mesure, optimisé pour les moteurs de recherche et adapté aux appareils mobiles (responsive design). 
+                </p>
+                <p><strong>Inclus dans ce pack :</strong></p>
+                <ul>
+                    <li>Création d’un site web (jusqu’à 5 pages).</li>
+                    <li>Design sur mesure adapté à votre image de marque.</li>
+                    <li>Optimisation SEO de base (référencement naturel).</li>
+                    <li>Site entièrement responsive (compatible mobile, tablette, desktop).</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modale Pack Growth -->
+<div class="modal fade" id="packGrowthModal" tabindex="-1" aria-labelledby="packGrowthModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="packGrowthModalLabel">Pack Silver</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <strong>Pack Silver</strong> va plus loin en intégrant, en plus de la création du site web, un service de <strong>maintenance trimestrielle et support technique</strong>. Idéal pour les entreprises qui souhaitent garder leur site performant et sécurisé sans s’en soucier.
+                </p>
+                <p><strong>Inclus dans ce pack :</strong></p>
+                <ul>
+                    <li>Tout ce qui est proposé dans le <strong>Pack Bronze</strong>.</li>
+                    <li>Maintenance technique (mises à jour de sécurité, gestion des bugs, optimisation des performances).</li>
+                    <li>Sauvegardes automatiques et régulières de votre site.</li>
+                    <li>Support technique disponible pour toute question ou intervention.</li>
+                    <li>Modifications mineures incluses (ajout de texte, remplacement d’images, etc.).</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modale Pack Pro -->
+<div class="modal fade" id="packProModal" tabindex="-1" aria-labelledby="packProModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="packProModalLabel">Pack Gold</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <strong>Pack Gold</strong> est la solution complète pour les entreprises qui souhaitent combiner <strong>présence en ligne, maintenance mensuelle technique</strong>, et une <strong>stratégie marketing digitale</strong> performante. 
+                </p>
+                <p><strong>Inclus dans ce pack :</strong></p>
+                <ul>
+                    <li>Tout ce qui est proposé dans les <strong>Packs Bronze et Silver</strong>.</li>
+                    <li>Gestion des réseaux sociaux : 
+                        <ul>
+                            <li>Création et gestion de pages professionnelles (Facebook, Instagram, LinkedIn, etc.).</li>
+                            <li>Planification et publication régulière de contenu.</li>
+                            <li>Analyse et suivi des performances.</li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+     
+<section id="contact" class="text-light d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Nous Contacter</h2>
+        <div class="row g-4">
+            <!-- Colonne Informations -->
+            <div class="col-12 col-md-6">
+                <h4>Informations de contact</h4>
+                <ul class="list-unstyled">
+                    <li><strong>Adresse :</strong> 8 chemin des pommier, Chanu</li>
+                    <li><strong>Téléphone :</strong> +33 6 35 45 37 25</li>
+                    <li><strong>Email :</strong> contact.novatechstudio@gmail.com</li>
+                </ul>
+                <!-- Carte Google Maps -->
+                <div class="mt-4 d-none d-md-block">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2631.886833697018!2d-0.676503!3d48.726754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a2aafda646db9%3A0x2748985c4043b953!2s8%20Chem.%20des%20Pommiers%2C%2061800%20Chanu!5e0!3m2!1sfr!2sfr!4v1736628954014!5m2!1sfr!2sfr" 
+                        width="100%" 
+                        height="200" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="social-links text-center mt-4">
+            <h4>Suivez-nous sur les réseaux sociaux</h4>
+            <a href="https://www.facebook.com/votrepage" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-square fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/votrecompte" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram-square fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/votreprofil" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/votrecompte" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github-square fa-2x"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Pied de page -->
+    <footer class="py-4 bg-dark text-light text-center">
+        <div class="container">
+            <p>&copy; 2025 NovaTech Studio. Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+     
+     <script>
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+                // Ferme uniquement si le menu est ouvert
+                const navbarCollapse = document.querySelector('#navbarNav');
+                const isExpanded = navbarCollapse.classList.contains('show');
+                if (isExpanded) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: false,
+                    });
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
