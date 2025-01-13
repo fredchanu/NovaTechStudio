@@ -154,10 +154,11 @@ nav {
 
 /* Section Présentation */
 #presentation {
-    height: 100vh; /* Prend toute la hauteur de la fenêtre */
-    padding: 0; /* Supprime les marges internes pour maximiser l'espace */
+    min-height: 100vh; /* Ajuste pour éviter le chevauchement avec le footer */
+    padding: 20px; /* Ajoute une marge intérieure pour aérer */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url('../images/presentation.webp') no-repeat center center;
+    background-size: cover; /* Assure que l'image de fond couvre toute la section */
     display: flex; /* Active Flexbox pour centrer les contenus */
     align-items: center; /* Centre verticalement les contenus */
     justify-content: center; /* Centre horizontalement les contenus */
@@ -172,15 +173,24 @@ nav {
     margin-bottom: 20px;
 }
 
-.section-text {
+.fin-presentation {
     font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--gold);
+    text-shadow: 0 0 8px #C7AE6A, 0 0 15px #FFD700;
+    margin-bottom: 20px;
+    
+}
+.section-text {
+    font-size: 1rem;
     line-height: 1.8;
     color: var(--white);
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px; /* Ajoute un espace après le texte principal */
 }
 
 #presentation img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
@@ -308,8 +318,13 @@ nav {
 
 /* Section Contact */
 #contact {
-    height: 100vh; /* Prend toute la hauteur de la fenêtre */
-    padding: 0; /* Supprime les marges internes pour maximiser l'espace */
+    display: flex;
+    flex-direction: column; /* Pour empiler les éléments verticalement */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    min-height: 100vh; /* Hauteur minimale égale à la hauteur de la fenêtre */
+    padding: 20px; /* Ajoute un peu d'espace autour */
+    text-align: center; /* Centre le texte */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     padding: 60px 0;
     color: var(--white);
@@ -321,30 +336,6 @@ nav {
     color: var(--gold);
     text-shadow: 0 0 10px #C7AE6A, 0 0 20px #FFD700;
     margin-bottom: 40px;
-}
-
-.contact-form .form-control {
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--white);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.contact-form .form-control:focus {
-    border-color: var(--gold);
-    box-shadow: 0 0 5px var(--gold);
-}
-
-.btn-outline-light {
-    border: 1px solid var(--gold);
-    color: var(--gold);
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.btn-outline-light:hover {
-    background: #C7AE6A;
-    color: #292929;
 }
 
 /* Section Réseaux sociaux */
@@ -362,6 +353,7 @@ nav {
 .social-links {
     margin-top: 20px;
 }
+
 
 .social-links h4 {
     color: #C7AE6A; /* Couleur dorée */
