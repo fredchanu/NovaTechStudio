@@ -6,6 +6,11 @@
     --white: #FFFFFF;
 }
 
+body, html {
+    user-select: none; /* Empêche la sélection de texte */
+    cursor: default;   /* Réinitialise le curseur */
+}
+
 html {
     -webkit-text-size-adjust: 100%; /* Safari iOS */
     text-size-adjust: 100%; /* Autres navigateurs modernes */
