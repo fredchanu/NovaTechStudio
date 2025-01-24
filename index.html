@@ -1,284 +1,140 @@
 <!DOCTYPE html>
-<html lang="fr" data-bs-smooth-scroll>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NovaTech Studio - Création de site vitrine, site internet sur mesure, référencement SEO, et marketing digital à Flers et ses alentours en Normandie. Contactez-nous pour booster votre présence en ligne.">
-    <meta name="robots" content="index, follow">
-    <title>Création de site internet à Flers et ses alentours | NovaTech Studio</title>
-    <!-- Framework Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Fichier CSS personnalisé -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="manifest" href="/images/site.webmanifest">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Novatech Studio - Accueil</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- CDN pour VanillaTilt -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.3/dist/vanilla-tilt.min.js"></script>
+  <!-- CDN pour GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <!-- GSAP ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="js/script.js" ></script>
 </head>
 
 <body>
-<!-- En-tête -->
-<header class="sticky-top">
-    <div class="container">  
-        <!-- Menu PC (affiché uniquement sur grand écran) -->
-        <nav class="d-none d-lg-block menu-transparent">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#accueil" aria-label="Lien vers la section Accueil">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#presentation" aria-label="Lien vers la section Présentation">Présentation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#services" aria-label="Lien vers la section Nos Services">Nos Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#contact" aria-label="Lien vers la section Contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Menu smartphone (affiché uniquement sur petit écran) -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none menu-transparent fixed-top">
-            <div class="container">
-                <a class="navbar-brand text-light" href="#">Accueil</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#presentation">Présentation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="main-header">
+    <div class="logo">Novatech <span>Studio</span></div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="burger" id="burger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
-</header>
+  </header>
 
+  <!-- MENU MOBILE (apparition au clic du burger) -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="index.html" class="active" onclick="closeMenu()">Accueil</a></li>
+      <li><a href="services.html" onclick="closeMenu()">Services</a></li>
+      <li><a href="about.html" onclick="closeMenu()">À propos</a></li>
+      <li><a href="realisations.html" onclick="closeMenu()">Réalisations</a></li>
+      <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
 
-   <!-- Section Accueil -->
-<section id="accueil" class="d-flex flex-column align-items-center justify-content-center text-center text-light py-5">
-    <img src="/images/Logo NovaTech Studio sans fond.png" alt="Logo NovaTech Studio - Création de site internet à Flers et ses alentours" class="logo img-fluid mb-4">
-    <h1 class="display-4 mt-3">Bienvenue chez NovaTech Studio</h1>
-    <p class="lead mt-2">Créateurs de solutions numériques sur mesure en Normandie.</p>
-</section>
-
-   <!-- Section Présentation -->
-<section id="presentation" class="d-flex align-items-center justify-content-center text-light py-5">
-    <div class="container">
-        <h2 class="mb-5 section-title text-center">Qui sommes-nous ?</h2>
-        <div class="row align-items-center">
-            <div class="col-12 col-md-6 text-center mb-4">
-                <img src="/images/pc bureau.webp" alt="Services de développement web à Flers et ses alentours" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-12 col-md-6 section-text ">
-                <p class="mb-3">Chez <strong>NovaTech Studio</strong>, nous sommes spécialisés dans la création de sites internet sur mesure et le marketing digital. Basés à Flers, nous accompagnons les entreprises locales et régionales dans leur transformation numérique.</p>
-                <ul class="list-unstyled mb-3">
-                    <li><i class="fas fa-check-circle me-2"></i> Création de sites vitrines modernes et responsive</li>
-                    <li><i class="fas fa-check-circle me-2"></i> Solutions de marketing digital adaptées à votre entreprise</li>
-                    <li><i class="fas fa-check-circle me-2"></i> Expertise locale pour Flers et ses alentours</li>
-                </ul>
-                
-                    <p class="fin-presentation"> "Notre mission est de transformer vos idées en réalités numériques performantes."</p>
-            </div>
-        </div>
+  <!-- HERO / BANNIÈRE D'ACCUEIL -->
+  <section class="hero">
+    <div id="particles-js"></div>
+    <div class="hero-content">
+      <h1 class="hero-title outlined-text">Novatech Studio</h1>
+      <p class="hero-subtitle">Créateurs de solutions numériques professionnelles et modernes</p>
+      <a href="contact.html" class="btn btn-primary">Devis Gratuit</a>
     </div>
-</section>
-
- 
-<!-- Section Nos Services -->
-<section id="services" class="text-light py-5">
-    <div class="container">
-        <h2 class="section-title text-center mb-5">Nos Services</h2>
-
-        <!-- Services Cards -->
-        <div class="row g-4">
-            <div class="col-lg-4">
-                <div class="service-card text-center p-4 bg-dark rounded h-100">
-                    <img src="/images/bronze-icon.png" alt="Création de site vitrine à Flers et ses alentours" class="service-icon mb-3 img-fluid">
-                    <h3 class="service-title">Création de Sites Vitrines</h3>
-                    <p class="service-text">Lancez votre présence en ligne avec un site web professionnel optimisé SEO.</p>
-                    <button class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#packStartModal">En savoir plus</button>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="service-card text-center p-4 bg-dark rounded h-100">
-                    <img src="/images/silver-icon.png" alt="Développement web sur mesure à Flers et ses alentours" class="service-icon mb-3 img-fluid">
-                    <h3 class="service-title">Développement Sur Mesure</h3>
-                    <p class="service-text">Des solutions adaptées à vos besoins, de la conception à la mise en ligne.</p>
-                    <button class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#packGrowthModal">En savoir plus</button>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="service-card text-center p-4 bg-dark rounded h-100">
-                    <img src="/images/gold-icon.png" alt="Marketing digital et SEO en Normandie" class="service-icon mb-3 img-fluid">
-                    <h3 class="service-title">Marketing Digital & SEO</h3>
-                    <p class="service-text">Améliorez votre visibilité grâce à des campagnes ciblées et du référencement naturel.</p>
-                    <button class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#packProModal">En savoir plus</button>
-                </div>
-            </div>
-        </div>
+     <!-- Formes géométriques -->
+    <div class="hero-shapes">
+      <div class="shape circle"></div>
+      <div class="shape triangle"></div>
+      <div class="shape square"></div>
     </div>
-</section>
+  </section>
 
-<!-- Modale Pack Start -->
-<div class="modal fade" id="packStartModal" tabindex="-1" aria-labelledby="packStartModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="packStartModalLabel">Pack Bronze</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    <strong>Pack Bronze</strong> est conçu pour les entreprises ou indépendants souhaitant établir une présence en ligne rapidement et efficacement. Ce pack inclut la <strong>création d’un site web professionnel</strong> sur mesure, optimisé pour les moteurs de recherche et adapté aux appareils mobiles (responsive design). 
-                </p>
-                <p><strong>Inclus dans ce pack :</strong></p>
-                <ul>
-                    <li>Création d’un site web (jusqu’à 5 pages).</li>
-                    <li>Design sur mesure adapté à votre image de marque.</li>
-                    <li>Optimisation SEO de base (référencement naturel).</li>
-                    <li>Site entièrement responsive (compatible mobile, tablette, desktop).</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-            </div>
-        </div>
+  <!-- APERÇU DES SERVICES -->
+  <section class="services-preview section-light">
+    <h2>Nos Services</h2>
+    <div class="services-cards">
+      <div class="service-card tilt-card">
+        <i class="service-icon fas fa-code"></i>
+        <h3>Création de sites web</h3>
+        <p>Sites vitrines modernes, adaptatifs et efficaces.</p>
+      </div>
+      <div class="service-card tilt-card">
+        <i class="service-icon fas fa-tools"></i>
+        <h3>Maintenance</h3>
+        <p>Maintenance trimestrielle, correctifs et mises à jour.</p>
+      </div>
+      <div class="service-card tilt-card">
+        <i class="service-icon fas fa-server"></i>
+        <h3>Hébergement</h3>
+        <p>Conseils et accompagnement pour l’hébergement adapté.</p>
+      </div>
     </div>
+    <a href="services.html" class="btn btn-primary">Découvrir tous nos services</a>
+  </section>
+
+
+  <section class="realisations-preview section-dark">
+    <h2>Nos Réalisations</h2>
+    <div class="realisations-gallery">
+
+ <!-- Projet 1 : Tinchebray Cyclo -->
+ <div class="realisation-card tilt-card">
+  <a href="/assets/images/projet-a.png" data-lightbox="realisations" data-title="Tinchebray Cyclo - Site vitrine pour une association sportive">
+    <img src="/assets/images/projet-a.png" alt="Page d'accueil de Tinchebray Cyclo" loading="lazy">
+  </a>
+  <div class="realisation-info">
+    <h3>Tinchebray Cyclo</h3>
+    <p>Création d'un Site vitrine pour une association sportive, le site propose des informations sur les activités et les événements de l'association.</p>
+    </p>
+  </div>
 </div>
 
-<!-- Modale Pack Growth -->
-<div class="modal fade" id="packGrowthModal" tabindex="-1" aria-labelledby="packGrowthModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="packGrowthModalLabel">Pack Silver</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    <strong>Pack Silver</strong> va plus loin en intégrant, en plus de la création du site web, un service de <strong>maintenance trimestrielle et support technique</strong>. Idéal pour les entreprises qui souhaitent garder leur site performant et sécurisé sans s’en soucier.
-                </p>
-                <p><strong>Inclus dans ce pack :</strong></p>
-                <ul>
-                    <li>Tout ce qui est proposé dans le <strong>Pack Bronze</strong>.</li>
-                    <li>Maintenance technique (mises à jour de sécurité, gestion des bugs, optimisation des performances).</li>
-                    <li>Sauvegardes automatiques et régulières de votre site.</li>
-                    <li>Support technique disponible pour toute question ou intervention.</li>
-                    <li>Modifications mineures incluses (ajout de texte, remplacement d’images, etc.).</li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-            </div>
-        </div>
-    </div>
+<!-- Projet 2 : Les randonnées incontournables de Normandie (Coming Soon) -->
+<div class="realisation-card tilt-card coming-soon">
+  <a href="#" data-lightbox="realisations" data-title="Les randonnées incontournables de Normandie - À venir">
+    <img src="/assets/images/coming-soon.webp" alt="Les randonnées incontournables de Normandie - À venir" loading="lazy">
+  </a>
+  <div class="realisation-info">
+    <h3>Les randonnées incontournables de Normandie</h3>
+    <p>Projet en cours de développement. Découvrez bientôt une nouvelle plateforme dédiée aux randonnées en Normandie.</p>
+  </div>
 </div>
 
-<!-- Modale Pack Pro -->
-<div class="modal fade" id="packProModal" tabindex="-1" aria-labelledby="packProModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="packProModalLabel">Pack Gold</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    <strong>Pack Gold</strong> est la solution complète pour les entreprises qui souhaitent combiner <strong>présence en ligne, maintenance mensuelle technique</strong>, et une <strong>stratégie marketing digitale</strong> performante. 
-                </p>
-                <p><strong>Inclus dans ce pack :</strong></p>
-                <ul>
-                    <li>Tout ce qui est proposé dans les <strong>Packs Bronze et Silver</strong>.</li>
-                    <li>Gestion des réseaux sociaux : 
-                        <ul>
-                            <li>Création et gestion de pages professionnelles (Facebook, Instagram, LinkedIn, etc.).</li>
-                            <li>Planification et publication régulière de contenu.</li>
-                            <li>Analyse et suivi des performances.</li>
-                        </ul>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-            </div>
-        </div>
-    </div>
+<!-- Projet 3 : VertDesign Paysagiste (Coming Soon) -->
+<div class="realisation-card tilt-card coming-soon">
+  <a href="#" data-lightbox="realisations" data-title="Végétal Design Paysagiste - À venir">
+    <img src="/assets/images/coming-soon.webp" alt="Végétal Design Paysagiste - À venir" loading="lazy">
+  </a>
+  <div class="realisation-info">
+    <h3>Végétal Design Paysagiste</h3>
+    <p>Projet en cours de développement. Bientôt disponible : un site dédié au design végétal et à l'aménagement paysager.</p>
+  </div>
 </div>
-
-<!-- Section Contact -->
-<section id="contact" class="text-light py-5">
-    <div class="container">
-        <h2 class="section-title text-center mb-4">Contactez-nous</h2>
-        <p class="text-center">Vous êtes à Flers, ses alentours ou en Normandie ? Parlons de votre projet de site internet !</p>
-        <ul class="list-unstyled text-center">
-            <li><strong>Email :</strong> contact.novatechstudio@gmail.com</li>
-            <li><strong>Téléphone :</strong> +33 6 35 45 37 25</li>
-        </ul>
-             <!-- Carte Google Maps -->
-             <div class="mt-4 d-none d-md-block">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2631.886833697018!2d-0.676503!3d48.726754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a2aafda646db9%3A0x2748985c4043b953!2s8%20Chem.%20des%20Pommiers%2C%2061800%20Chanu!5e0!3m2!1sfr!2sfr!4v1736628954014!5m2!1sfr!2sfr" 
-                    width="50%" 
-                    height="200" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-            </div>
-        </div>
-    </div>    
-       
-        <div class="social-links text-center mt-4">
-            <h4>Suivez-nous sur les réseaux sociaux</h4>
-            <a href="https://www.facebook.com/votrepage" target="_blank" aria-label="Facebook">
-                <i class="fab fa-facebook-square fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-chanu-a39553231/" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://github.com/fredchanu" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github-square fa-2x"></i>
-            </a>
-        </div>
     </div>
-</section>
+    <a href="realisations.html" class="btn btn-primary">Voir toutes les réalisations</a>
+  </section>
 
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <p>© 2025 Novatech Studio - Tous droits réservés.</p>
+  </footer>
 
-    <!-- Pied de page -->
-    <footer class="py-4 bg-dark text-light text-center">
-        <div class="container">
-            <p>&copy; 2025 NovaTech Studio. Tous droits réservés.</p>
-        </div>
-    </footer>
-    
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-     
-     <script>
-        document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
-            link.addEventListener('click', function() {
-                // Ferme uniquement si le menu est ouvert
-                const navbarCollapse = document.querySelector('#navbarNav');
-                const isExpanded = navbarCollapse.classList.contains('show');
-                if (isExpanded) {
-                    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                        toggle: false,
-                    });
-                    bsCollapse.hide();
-                }
-            });
-        });
-    </script>
-    
 </body>
 </html>

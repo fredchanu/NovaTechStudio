@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Novatech Studio - Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+   <!-- Font Awesome CDN pour les icônes (facultatif) -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="main-header">
+    <div class="logo">Novatech <span>Studio</span></div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="burger" id="burger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Accueil</a></li>
+      <li><a href="services.html" class="active" onclick="closeMenu()">Services</a></li>
+      <li><a href="about.html" onclick="closeMenu()">À propos</a></li>
+      <li><a href="realisations.html" onclick="closeMenu()">Réalisations</a></li>
+      <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- SECTION SERVICES -->
+  <section class="services-details section-light">
+    <h1>Nos Packs</h1>
+    <p>Découvrez nos formules pour un site moderne et professionnel.</p>
+
+    <div class="service-pack-container">
+      <!-- PACK Clé en Main -->
+      <div class="service-pack tilt-card">
+        <h2>Pack Clé en Main</h2>
+        <p class="price">À partir de 850€</p>
+        <ul>
+          <li>Design moderne et personnalisé</li>
+          <li>Installation et configuration de base</li>
+          <li>Hébergement géré par le client</li>
+        </ul>
+      </div>
+
+      <!-- PACK Sérénité -->
+      <div class="service-pack tilt-card">
+        <h2>Pack Sérénité</h2>
+        <p class="price">À partir de 850€ + abonnement</p>
+        <ul>
+          <li>Tout le Pack Clé en Main inclus</li>
+          <li>Maintenance trimestrielle</li>
+          <li>Hébergement inclus</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <h2>Nos Services </h2>
+    <p>Chez Novatech Studio, nous proposons une gamme complète de services pour répondre à tous vos besoins numériques. Découvrez comment nous pouvons vous aider à transformer votre présence en ligne.</p>
+    
+    <div class="services-gallery">
+      
+      <!-- Service 1 : Création de Sites Web -->
+      <div class="service-card tilt-card">
+        <i class="fas fa-code service-icon"></i>
+        <h3>Création de Sites Web</h3>
+        <p>Nous concevons des sites web modernes, réactifs et personnalisés qui reflètent parfaitement votre identité de marque et répondent aux attentes de vos utilisateurs.</p>
+      </div>
+      
+      <!-- Service 3 : SEO et Marketing Digital -->
+      <div class="service-card tilt-card">
+        <i class="fas fa-search service-icon"></i>
+        <h3>SEO et Marketing Digital</h3>
+        <p>Optimisez votre visibilité en ligne grâce à nos stratégies de SEO avancées et à nos campagnes de marketing digital ciblées.</p>
+      </div>
+      
+      <!-- Service 4 : Maintenance et Support -->
+      <div class="service-card tilt-card">
+        <i class="fas fa-tools service-icon"></i>
+        <h3>Maintenance et Support</h3>
+        <p>Nous assurons la maintenance régulière de votre site ou application pour garantir leur performance, leur sécurité et leur évolutivité.</p>
+      </div>
+      
+      <!-- Service 5 : Hébergement Web -->
+      <div class="service-card tilt-card">
+        <i class="fas fa-server service-icon"></i>
+        <h3>Hébergement Web</h3>
+        <p>Profitez de nos solutions d’hébergement fiables et sécurisées, assurant une disponibilité maximale et des temps de chargement rapides.</p>
+      </div>
+    </div>
+    
+    <!-- Appel à l'Action -->
+    <div class="cta-button">
+      <a href="contact.html" class="btn btn-primary">Demandez un Devis</a>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <p>© 2025 Novatech Studio - Tous droits réservés.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
+</body>
+</html>

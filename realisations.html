@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Découvrez les réalisations de Novatech Studio, spécialiste en développement web et solutions numériques sur mesure en Normandie.">
+  <meta name="keywords" content="réalisations, projets, sites web, développement web, solutions numériques, Novatech Studio">
+  <meta name="author" content="Novatech Studio">
+  <meta property="og:title" content="Réalisations - Novatech Studio">
+  <meta property="og:description" content="Découvrez les réalisations de Novatech Studio, spécialiste en développement web et solutions numériques sur mesure en Normandie.">
+  <title>Réalisations - Novatech Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome CDN pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="main-header">
+    <div class="logo">Novatech <span>Studio</span></div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="realisations.html" class="active">Réalisations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="burger" id="burger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="realisations.html" class="active" onclick="closeMenu()">Réalisations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- SECTION RÉALISATIONS -->
+  <section class="realisations-section">
+    <h2>Nos Réalisations</h2>
+    
+    <!-- Projets Terminés -->
+    <div class="realisations-gallery">
+      
+      <!-- Projet 1 : Tinchebray Cyclo -->
+      <div class="realisation-card tilt-card">
+        <a href="/assets/images/projet-a.png" data-lightbox="realisations" data-title="Tinchebray Cyclo - Site de cyclisme en Normandie">
+          <img src="/assets/images/projet-a.png" alt="Page d'accueil de Tinchebray Cyclo" loading="lazy">
+        </a>
+        <div class="realisation-info">
+          <h3>Tinchebray Cyclo</h3>
+          <p>Création d'une plateforme dédiée aux passionnés de cyclisme en Normandie, offrant des itinéraires VTT, cyclo gravel et pédestre avec des descriptions détaillées et des cartes interactives.</p>
+          <a href="https://tinchebray-cyclo.com" target="_blank" rel="noopener">tinchebray-cyclo.com</a>
+        </div>
+      </div>
+      
+      <!-- Projet 2 : Normandie Trails Explorer (À venir) -->
+      <div class="realisation-card tilt-card coming-soon">
+        <a href="#" data-lightbox="realisations" data-title="Les randonnées incontournables de Normandie - À venir">
+          <img src="/assets/images/coming-soon.webp" alt="Les randonnées incontournables de Normandie - À venir" loading="lazy">
+        </a>
+        <div class="realisation-info">
+          <h3>Les randonnées incontournables de Normandie</h3>
+          <p>Projet en cours de développement. Bientôt disponible : une plateforme dédiée aux randonnées VTT, cyclo, gravel et pédestre en Normandie.</p>
+        </div>
+      </div>
+      
+      <!-- Projet 3 : VertDesign Paysagiste (À venir) -->
+      <div class="realisation-card tilt-card coming-soon">
+        <a href="#" data-lightbox="realisations" data-title="Végétal Design Paysagiste - À venir">
+          <img src="/assets/images/coming-soon.webp" alt="Végétal Design Paysagiste - À venir" loading="lazy">
+        </a>
+        <div class="realisation-info">
+          <h3>Végétal Design Paysagiste</h3>
+          <p>Projet en cours de développement. Bientôt disponible : un site dédié au design végétal et à l'aménagement paysager.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION TÉMOIGNAGES -->
+  <section class="testimonials-section">
+    <h2>Témoignages</h2>
+    <div class="testimonials-gallery">
+      
+      <!-- Témoignage 1 (Placeholder) -->
+      <div class="testimonial-card">
+        <p>"Collaborer avec Novatech Studio a été une expérience exceptionnelle. Leur équipe a su comprendre nos besoins spécifiques et a développé un site web à la fois esthétique et fonctionnel, parfaitement adapté à notre communauté de cyclistes en Normandie. La navigation est intuitive et le support technique est toujours réactif. Nous recommandons vivement Novatech Studio à toute entreprise souhaitant améliorer sa présence en ligne."</p>
+        <p><strong>- L'équipe Tinchebray-Cyclo</strong></p>
+      </div>
+      
+      <!-- Ajouter d'autres témoignages futurs ici -->
+      
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <p>© 2025 Novatech Studio - Tous droits réservés.</p>
+  </footer>
+
+  
+  <!-- Scripts JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

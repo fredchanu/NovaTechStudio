@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contactez Novatech Studio pour vos besoins en développement web, applications mobiles, SEO et plus encore en Normandie.">
+  <meta name="keywords" content="contact, formulaire, email, message, réseaux sociaux, Novatech Studio">
+  <meta name="author" content="Novatech Studio">
+  <meta name="robots" content="index, follow">
+  <title>Contact - Novatech Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome CDN pour les icônes (facultatif) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="main-header">
+    <div class="logo">Novatech <span>Studio</span></div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="burger" id="burger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="realisations.html">Réalisations</a></li>
+      <li><a href="contact.html" class="active" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- SECTION CONTACT -->
+  <section class="contact-section">
+    <h2>Contactez-Nous</h2>
+    <p>Vous avez des questions ou souhaitez discuter de votre projet ? Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+    
+    <div class="contact-container">
+      <!-- Formulaire de Contact -->
+      <form action="mailto:votreadresseemail@example.com" method="post" enctype="text/plain" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required placeholder="Votre nom">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required placeholder="Votre email">
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Sujet :</label>
+          <input type="text" id="subject" name="subject" required placeholder="Sujet de votre message">
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Votre message"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </div>
+      </form>
+
+          <!-- Section Coordonnées -->
+    <div class="contact-coordinates">
+      <h3>Nos Coordonnées</h3>
+      <p><strong>Adresse :</strong> 8 chemin des pommiers, 61800 Chanu, Normandie, France</p>
+      <p><strong>Téléphone :</strong> +33 6 35 45 37 25</p>
+      <p><strong>Email :</strong> contact.novatechstudio@gmail.com</p>
+    </div>
+      
+      <!-- Bouton "Suivez-nous" avec Réseaux Sociaux -->
+      <div class="follow-us-container">
+        <button class="follow-us-button" id="follow-us-button">
+          Suivez-nous <i class="fas fa-arrow-right"></i>
+        </button>
+        
+        <div class="social-icons" id="social-icons">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://github.com/fredchanu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-chanu-a39553231/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <p>© 2025 Novatech Studio - Tous droits réservés.</p>
+  </footer>
+
+  <!-- Lightbox2 JS (si utilisé) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
