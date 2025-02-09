@@ -389,7 +389,12 @@ section {
   padding: 60px 20px;
   text-align: center;
 }
-
+.services-section p {
+  margin-bottom: 40px; /* Ajuste l'espace entre le paragraphe et les cartes */
+}
+.services-details p {
+  margin-bottom: 40px; /* Ajuste l'espace entre le paragraphe et les cartes */
+}
 .services-section h2 {
   font-size: 2.5rem;
   color: var(--color-gold);
@@ -420,6 +425,91 @@ section {
   font-size: 1.5rem;
   color: var(--color-gold);
   margin: 10px 0;
+}
+/* Stylisation des cartes de services */
+.service-card {
+  background-color: var(--color-white);
+  color: var(--color-night-blue);
+  padding: 25px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Équilibre le texte et le bouton */
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Effet spécial pour le Pack Premium */
+.premium-card {
+  background: linear-gradient(135deg, var(--color-gold), #e5c07b);
+  color: #1B2432;
+  border: 2px solid var(--color-gold);
+}
+
+.premium-card h3 {
+  color: #ffffff;
+}
+
+.premium-card:hover {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+/* Prix des services */
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-turquoise);
+  margin-bottom: 15px;
+}
+
+/* Boutons des services */
+.service-card .btn-primary {
+  display: block;
+  width: 100%;
+  margin-top: auto;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: var(--color-turquoise);
+  border: 2px solid var(--color-turquoise);
+  color: var(--color-white);
+  border-radius: 5px;
+  text-transform: uppercase;
+  opacity: 1 !important; /* S'assurer qu'il est bien visible */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.service-card .btn-primary:hover {
+  background-color: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-night-blue);
+}
+/* Correction pour éviter que les boutons disparaissent */
+.service-card:hover .btn-primary {
+  opacity: 1 !important;
+}
+/* Debug : voir s'il y a un problème de superposition */
+.service-card .btn-primary {
+  z-index: 10; /* Met le bouton au-dessus */
+  position: relative;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+  }
 }
 
 /* Galerie de Services */
