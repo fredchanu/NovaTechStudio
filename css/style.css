@@ -951,7 +951,8 @@ section {
 /* ANIMATIONS */
 /* Styles pour les titres des sections */
 .services-preview h2,
-.realisations-preview h2 {
+.realisations-preview h2,
+.recent-blog h2{
   position: relative;
   display: inline-block;
   font-size: 2rem;
@@ -960,7 +961,8 @@ section {
 
 /* Pseudo-élément pour le soulignement */
 .services-preview h2::after,
-.realisations-preview h2::after {
+.realisations-preview h2::after,
+.recent-blog h2::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -975,7 +977,8 @@ section {
 
 /* Animation au survol */
 .services-preview h2:hover::after,
-.realisations-preview h2:hover::after {
+.realisations-preview h2:hover::after,
+.recent-blog h2:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -992,4 +995,131 @@ section {
   .realisation-card {
     width: 90%;
   }
+}
+
+/* Styles pour la section blog */
+#recent-blog{
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.blog-preview {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  background-color: var(--color-light-gray);
+  color: var(--color-night-blue);
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card h3 {
+  margin-top: 0;
+}
+
+.blog-card p {
+  font-size: 14px;
+  color: var(--color-gray);
+}
+
+.blog-card .read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--color-turquoise);
+  font-weight: bold;
+}
+
+.blog-card .read-more:hover {
+  color: var(--color-gold);
+}
+
+/* Section Blog */
+#articles {
+  display:inline-flex;
+  gap: 50px;
+}
+
+/* Cartes d'articles */
+.blog-card {
+  background: #C9A34E;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Titres des articles */
+.blog-card h2 {
+  color: #4ABDAC;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-card h3 {
+  color: #1B2432;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Paragraphes */
+.blog-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Styles pour la conclusion */
+.conclusion {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-left: 5px solid #4ABDAC; /* Ajoute une bordure colorée */
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+/* Styles pour l'appel à l'action */
+.call-to-action {
+  background: linear-gradient(135deg, #4ABDAC, #388087);
+  padding: 25px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.call-to-action p{
+  color: #f0f0f0;
+}
+
+.call-to-action a {
+  color: #C9A34E;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #222;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.call-to-action a:hover {
+  background-color: #C9A34E;
+  color: #222;
 }
