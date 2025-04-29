@@ -187,6 +187,21 @@ section {
   left: 0;
   z-index: 0;
 }
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .btn.btn-primary {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
 
 /* Assurer que le contenu reste au-dessus */
 .hero-content {
